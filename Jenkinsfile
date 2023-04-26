@@ -16,8 +16,7 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
-                cd myapp
-                node hello.js
+                node helloworld.js
                 '''
             }
         }
