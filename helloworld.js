@@ -1,4 +1,4 @@
-import multiply from './myapp/hello'
+const multiply = require('./myapp/hello');
 
 const App = () => {
    return (
