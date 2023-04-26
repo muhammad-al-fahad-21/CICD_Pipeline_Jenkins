@@ -4,4 +4,4 @@ function myFunction(a, b) {
   return a * b;
 }
 
-modules.exports = myFunction
+module.exports = myFunction
