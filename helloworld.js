@@ -1,11 +1,7 @@
 const multiply = require('./myapp/hello');
 
 const App = () => {
-   return (
-    <div>
-        {multiply}
-    </div>
-   )
+   console.log(multiply)
 }
 
 module.exports = App
