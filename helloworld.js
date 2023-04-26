@@ -1,2 +1,11 @@
+import multiply from './myapp/hello'
 
-console.log("Hi, JavaScript")
+const App = () => {
+   return (
+    <div>
+        {multiply}
+    </div>
+   )
+}
+
+module.exports = App
