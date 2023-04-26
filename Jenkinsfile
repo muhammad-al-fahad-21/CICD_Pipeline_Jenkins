@@ -9,7 +9,6 @@ pipeline {
                 echo "Building.."
                 sh '''
                 cd myapp
-                npm install
                 '''
             }
         }
@@ -19,7 +18,6 @@ pipeline {
                 sh '''
                 cd myapp
                 node hello.js
-                node hello.js --name=Brad
                 '''
             }
         }
