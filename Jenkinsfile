@@ -8,7 +8,7 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
-                cd myapp
+                npm install
                 '''
             }
         }
@@ -16,7 +16,7 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
-                node helloworld.js
+                npm run test
                 '''
             }
         }
@@ -24,7 +24,7 @@ pipeline {
             steps {
                 echo 'Deliver....'
                 sh '''
-                echo "doing delivery stuff.."
+                curl -X POST -H "Content-Type: application/json" -d '{\"username\":\"myuser\", \"password\":\"mypassword\"}' https://mydeploymentlink.com/deploy
                 '''
             }
         }
